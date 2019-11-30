@@ -1,0 +1,31 @@
+<div class='profile'>
+    <p>Nome: {{nome}}</p>
+    <p>E-mail: {{email}}</p>
+    <p>Profissão: {{profissao}}</p>
+    <p>Idade: {{idade}}</p>
+
+
+    <link rel="stylesheet" href="/profile/profile.component.css">
+
+    <p><strong>Nome:</strong> <span>{{profile.nome}}</span></p>
+    <p><strong>E-mail:</strong> <span>{{profile.email}}</span></p>
+    <p><strong>Profissão:</strong> <span>{{profile.profissao}}</span></p>
+    <p><strong>Idade:</strong> <span>{{profile.idade}}</span></p>
+    <div class='avatar'>
+        <img [src]="profile.avatar" (click)='showName()'>
+    </div>
+    <div>
+        <h3>Form</h3>
+        <input [(ngModel)]='profile.nome' placeholder="Digite o nome do Profile">
+        <br>
+        <input [value]='profile.email' (input)='changeEmailHandler($event)'>
+    </div>
+</div>
+<h1>Lista de Profiles</h1>
+<div *ngFor="let prof of profiles">
+        <p><strong>Nome:</strong> <span>{{prof.nome}}</span></p>
+        <div class='avatar'>
+            <img [src]="prof.avatar">
+        </div>
+</div>
+

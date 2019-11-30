@@ -1,0 +1,13 @@
+<div class="login-page">
+        <div class="login-panel">
+            <h3 class="login-panel__header">Login</h3>
+            <div class="login-panel__content">
+                <label>Email:</label>
+                <input placeholder="Digite seu login" type="email" [(ngModel)]="credential.email">
+                <label>Senha:</label>
+                <input placeholder="Digite sua senha" type="password" [(ngModel)]="credential.password">
+                <p *ngIf="messageError != null">{{messageError}}</p>
+                <button class="btnEntrar" (click)="loginHandler()">Entrar</button>
+            </div>
+        </div>
+    </div>

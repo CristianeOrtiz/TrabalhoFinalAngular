@@ -1,0 +1,32 @@
+.upcoming-events{
+    width: 220px;
+    height: 320px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.upcoming-events__image-container{
+    width: 188px;
+    height: 125px;
+}
+
+.upcoming-events__image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.upcoming-events__actions button{
+    color: #000000;
+    font: 15px "Open Sans", sans-serif;
+    background: #dfe5e8;
+    padding: 8px 16px;
+    width: 188px;
+    height: 38px;
+
+}

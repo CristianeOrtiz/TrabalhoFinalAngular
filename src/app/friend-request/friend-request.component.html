@@ -1,0 +1,13 @@
+<div class='friend-request'>
+    <h2>{{title}}</h2>
+    <div class='friend-request__image-container'>
+        <img [src]='avatar'>
+
+    </div>
+    <h3>{{name}}</h3>
+    <div class="friend-request__actions">
+        <button class="btn-confirm" (click)='confirmHandler()'>Confimar</button>
+        <button class="btn-reject" (click)='rejectHandler()'>Rejeitar</button>
+    </div>
+
+</div>
